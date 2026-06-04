@@ -1,0 +1,322 @@
+```html
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OGS Community</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111;
+    border-bottom:1px solid #222;
+    z-index:1000;
+}
+
+nav{
+    max-width:1300px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    height:55px;
+}
+
+.logo h2{
+    color:#00bfff;
+}
+
+.menu{
+    display:flex;
+    gap:12px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    padding:12px 18px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.discord{
+    background:#5865F2;
+}
+
+.telegram{
+    background:#229ED9;
+}
+
+.menu a:hover{
+    transform:translateY(-2px);
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:80px;
+    color:#00bfff;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#ccc;
+    font-size:22px;
+}
+
+/* PRODUCTS */
+
+.products{
+    max-width:1300px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.products h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card-link{
+    text-decoration:none;
+    color:white;
+}
+
+.card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(88,101,242,.25);
+}
+
+.card img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-content{
+    padding:18px;
+    text-align:center;
+}
+
+.card-content h3{
+    margin-bottom:8px;
+}
+
+.card-content p{
+    color:#ccc;
+}
+
+/* ABOUT */
+
+.about{
+    max-width:1300px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:60px;
+    background:#111;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:50px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+    <img src="ogscommunity.gif" alt="Logo">
+    <h2>OGS Community</h2>
+</div>
+
+<div class="menu">
+
+<a href="https://t.me/ogscommunitty"
+target="_blank"
+class="telegram">
+Telegram
+</a>
+
+<a href="https://discord.gg/KERzr8C5me"
+target="_blank"
+class="discord">
+Discord
+</a>
+
+</div>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>OGS Community</h1>
+
+<p>
+Kaliteli ve uygun premium içerikler
+</p>
+
+</section>
+
+<section class="products">
+
+<h2>Ürünler</h2>
+
+<div class="cards">
+
+<a href="https://discord.gg/KERzr8C5me"
+target="_blank"
+class="card-link">
+
+<div class="card">
+
+<img src="ogscommunity.gif">
+
+<div class="card-content">
+<h3>Galatasaray Premium</h3>
+<p>Detaylar için tıkla.</p>
+</div>
+
+</div>
+
+</a>
+
+<a href="https://discord.gg/KERzr8C5me"
+target="_blank"
+class="card-link">
+
+<div class="card">
+
+<img src="icardibıgscp.png">
+
+<div class="card-content">
+<h3>İcardi Big SCP</h3>
+<p>Detaylar için tıkla.</p>
+</div>
+
+</div>
+
+</a>
+
+<a href="https://discord.com/users/1266281343957078029"
+target="_blank"
+class="card-link">
+
+<div class="card">
+
+<img src="hasowaeppack.png">
+
+<div class="card-content">
+<h3>Hasowaep Pack</h3>
+<p>Detaylar için tıkla.</p>
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>Hakkımızda</h2>
+
+<p>
+OGS Community premium içerikler, SCP paketleri ve edit içerikleri paylaşan bir topluluktur.
+Detaylı bilgi için Discord veya Telegram üzerinden ulaşabilirsiniz.
+</p>
+
+</section>
+
+<footer>
+© 2026 OGS Community
+</footer>
+
+</body>
+</html>
+```
